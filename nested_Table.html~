@@ -32,23 +32,29 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>Sitzmaschine chair by Josef Hoffmann</h1>
+<a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>Four Nesting Table by Josef Hoffmann</h1>
 <div>
-<p> I have reproduced the "Sitzmaschine chair" by Josef Hoffmann from the side profile.
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-profile-side.png?raw=true" alt="side profile" style="width:300px; heigth:30px;" align="left">
-<p> I reproduced the finish with the holes with the use of two functions
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-profileside-with-hole.png?raw=true" alt="profile with hole" style="width:300px; heigth:30px;" align="left">
-I then developed the seat and back and I placed in the right position.
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/schienale.png?raw=true" alt="front profile" style="width:300px; heigth:30px;" align="left">
-Only at the end I defined some details like the hinges and knobs of the chair.
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-js-lato.png?raw=true" alt="knob & profile" style="width:300px; heigth:30px;" align="left">
+BASE
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-basi.png?raw=true" alt="side profile" style="width:300px; heigth:30px;" align="left"></p>
+LEG OF TABLE
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-legtable.png?raw=true" alt="side profile" style="width:300px; heigth:30px;" align="left"></p>
+PIANI DEL TAVOLO
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-piani.png?raw=true" alt="side profile" style="width:300px; heigth:30px;" align="left"></p>
+
 
 This is the final result is presented in javascript that in python.
+TAVOLI UNITI
 <p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmachine.jpg?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
 javascript result:
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-javascript.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-tavoliuniti.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
 python result:
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-python.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/py-tavoliuniti.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
+TAVOLI SEPARATI
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmachine.jpg?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
+javascript result:
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-tavoliseparati.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
+python result:
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/py-tavoliseparati.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
 </p>
 </div>
   
