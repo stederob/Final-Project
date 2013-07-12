@@ -32,24 +32,25 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>Melon Service by Josef Hoffmann</h1>
+<a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>TEAPOT</h1>
 <div>
-<h2>CARAFE</h2>
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe.png?raw=true" alt="carafe-js" style="width:300px; heigth:30px;" align="left"></p>
+PARIAL FORM
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-partial-teapot-form.png?raw=true" alt="carafe-form-js" style="width:300px; heigth:30px;" align="left"></p>
+
+
+FORM
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-teapot-form.png?raw=true" alt="carafe-form-js" style="width:300px; heigth:30px;" align="left"></p>
+SPOUTH
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-teapot-spout.png?raw=true" alt="spouth-teapot-js" style="width:300px; heigth:30px;" align="left"></p>
 <a href="http://stederob.github.io/Final-Project/carafe.html">Carafe</a>
-<h2>TEAPOT</h2>
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/teapot-js.png?raw=true" alt="teapot-js" style="width:300px; heigth:30px;" align="left"></p>
-<h2>SUGAR BOWL</h2>
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-sugarbowl.png?raw=true" alt="sugar-bowl-js" style="width:300px; heigth:30px;" align="left"></p>
-<h2>CUP</h2>
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-cup.png?raw=true" alt="sugar-bowl-js" style="width:300px; heigth:30px;" align="left"></p>
+HANDLE
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-teapot-handle.png?raw=true" alt="handle-carafe-js" style="width:300px; heigth:30px;" align="left"></p>
 
-
-This is the final result:
-MELON SERVICE
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melone_design.jpg?raw=true" style="width:300px; heigth:30px;" align="left">
-javascript result:
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/melon-service.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
+This is a result in javascript and python language.
+Javascript
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe.png?raw=true" alt="sugar-bowl-js" style="width:300px; heigth:30px;" align="left"></p>
+Python
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/py-carafe.png?raw=true" style="width:300px; heigth:30px;" align="left">
 </div>
 
 
