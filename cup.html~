@@ -32,23 +32,60 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         <h1>
-<a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>CARAFE</h1>
+<a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>CUP</h1>
+<font size="4">
 <div>
-SPOUTH
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe-spouth.png?raw=true" alt="spouth-carafe-js" style="width:300px; heigth:30px;" align="left"></p>
-<a href="http://stederob.github.io/Final-Project/carafe.html">Carafe</a>
-HANDLE
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe-handle.png?raw=true" alt="handle-carafe-js" style="width:300px; heigth:30px;" align="left"></p>
-CARAFE FORM
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe-form.png?raw=true" alt="carafe-form-js" style="width:300px; heigth:30px;" align="left"></p>
+<p>
+Since the very geometric shape of the cup I thought I'd build a field for each element and rotate about the z axis.<p>
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-saucerbottom.png?raw=true" style="width:250px; heigth:250px;" align="left">
+I have therefore created the bottom of the saucer creating a circular sector through the function 'arc' and rotating it.
+<pre>
+function arc(alpha,r,R){
+	var domain = DOMAIN([[0,alpha], [r,R]])([36,1]);
+	var mapping = function(v){
+		var a = v[0];
+		var r = v[1];
+		return [r*COS(a), r*SIN(a)];
+	};
+	var model = MAP(mapping)(domain);
+	return model;
+};
+</pre>
 
-This is a result in javascript and python language.
-Javascript
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe.png?raw=true" alt="sugar-bowl-js" style="width:300px; heigth:30px;" align="left"></p>
-Python
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/py-carafe.png?raw=true" style="width:300px; heigth:30px;" align="left">
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-partial-saucer-form.png?raw=true" style="width:150px; heigth:150px;" align="right">
+
+I then defined the form of a single sector of the saucer through the Coons patch, I replicated and I have a colored white and the other black.
+<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-saucer.png?raw=true" style="width:250px; heigth:250px;" align="left"></p>
+</br><p>Turning then the figure you get the saucer.</p>
+<pre>
+function rotate_form(partial,axes,angle,n){
+	var form = partial
+	var f = partial
+	for (i=0; i<'n'; i++){
+		f = R(axes)(angle)(f)
+		form = STRUCT([form,f])
+	}
+	return form;
+}
+</pre>
+<p>
+I followed the same procedure to generate the cup. From an industry I got a cup of turning PI / 3.
+</br>
+<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-partial-cup-form.png?raw=true" alt="handle-carafe-js" style="width:288px; heigth:288px;" align="left">
+<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-cup-form.png?raw=true" alt="cup-form-js" style="width:327px; heigth:327px;" align="right"></p>
+</br>
+</br>
+</br>
+</br>
+<p>
+I then designed the handle using Coons patches, drawing curves using Bezier curves.</p>
+<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-cup-handle.png?raw=true" alt="handle-cup-js" style="width:250px; heigth:250px;">
+<p>This is the result obtained in python and javascript</p>
+
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-cup.png?raw=true" alt="sugar-bowl-js" style="width:300px; heigth:300px;">
+<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/py-cup.png?raw=true" style="width:310px; heigth:310px;"></p>
 </div>
-
+</font>
 
 <h3>
 <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
