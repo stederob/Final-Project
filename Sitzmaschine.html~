@@ -33,27 +33,73 @@
       <section id="main_content" class="inner">
         <h1>
 <a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>Sitzmaschine chair by Josef Hoffmann</h1>
-<div>
-<p> I have reproduced the "Sitzmaschine chair" by Josef Hoffmann from the side profile.
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-profile-side.png?raw=true" alt="side profile" style="width:300px; heigth:30px;" align="left">
-<p> ho riprodotto le rifiniture con i buchi con l'utilizzo di due funzioni
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-profileside-with-hole.png?raw=true" alt="profile with hole" style="width:300px; heigth:30px;" align="left">
-I then developed the seat and back and I placed in the right position.
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/schienale.png?raw=true" alt="front profile" style="width:300px; heigth:30px;" align="left">
-Only at the end I defined some details like the hinges and knobs of the chair.
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-js-lato.png?raw=true" alt="knob & profile" style="width:300px; heigth:30px;" align="left">
-
-This is the final result is presented in javascript that in python.
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmachine.jpg?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
-javascript result:
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-javascript.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
-python result:
-<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-python.png?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:30px;" align="left">
+<div class="row-fluid">
+<font size ="4">
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-profile-side.png?raw=true" alt="side profile" style="width:250px; heigth:250px;" align="right">
+I started playing the lateral part through the use of "profile prod function" and curves Hermite (lend themselves better to circular shapes), paying attention to the fact that the curve is tightened down.
 </p>
-</div>
-  
-</div>
+<p>
+<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-profileside-with-hole.png?raw=true" alt="profile with hole" style="width:250px; heigth:250px;" align="left">
+I then made ​​the finish side with the holes using a function that takes the coordinates (x, y, z), the size of the hole and the number of holes and automatically generates the desired shape.
+</p>
+<pre>
+function wall_y_with_hole(dx,dy,dz,hole_y,hole_z,hole_dy,hole_dz) {
+	var g1 = SIMPLEX_GRID (([[dx],[hole_y,-hole_dy, dy-hole_y-hole_dy],[dz]]))
+	var g2 = SIMPLEX_GRID ([[dx],[-hole_y, hole_dy],[hole_z, -hole_dz,dz-hole_z-hole_dz]])
+	var g = STRUCT([g1,g2]);
+	return g;
+}
 
+function wall_y_with_N_hole(dx,dy,dz,hole_y,hole_z,hole_dy,hole_dz,n){
+	var f = wall_y_with_hole(dx,dy,dz,hole_y,hole_z,hole_dy,hole_dz);
+	var t = f;
+	for(i=1; i'<'n; i++){
+		t = STRUCT([t,T([1])([i*dy])(f)])
+	}
+	return t;
+}
+</pre>
+
+I also made balls decoration on the sides and under the seat managing the domains so as to obtain hemispheres when desired.
+<pre>
+var domain_sfera = DOMAIN([[0,2*PI],[0,2*PI]])([24,36]);
+var sfera = function(r){
+	return function(v){
+	return [r*SIN(v[0])*COS(v[1]),r*SIN(v[0])*SIN(v[1]),r*COS(v[0])]
+	}
+}
+</pre>
+or
+<pre>
+var domain_kb = DOMAIN([[-PI/2, PI/2],[-PI/2,PI/2]])([24,36]);
+</pre>
+<p align='justify'><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/schienale.png?raw=true" alt="front profile" style="width:300px; heigth:300px;" align="right">
+Then I rebuilt the front seat with simple drawing of Hermite and Bezier curves and back using the "simplex grid" to shape the holes.
+</p>
+<p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-js-lato.png?raw=true" alt="knob & profile" style="width:300px; heigth:300px;" align="left"></p>
+
+Finally I realized the functional details such as hinges between the backrest and seat and the rod for adjusting the backrest.
+
+<p> 
+This is the result obtained in javascript and python.</p>
+<p>
+<div align="center">
+<figure>
+<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmachine.jpg?raw=true" alt="Josef Hoffmann" style="width:300px; heigth:300px;" >
+    <figcaption>
+        <p>Original Model</p>
+    </figcaption>
+</figure>
+
+</div>
+</p>
+
+<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-javascript.png?raw=true" alt="Josef Hoffmann" "javascript result" style="width:300px; heigth:300px;">
+<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-python.png?raw=true" alt="Josef Hoffmann"  style="width:320px; heigth:320px;"/>
+
+</font>
+</div>
+</div>
 
 <h3>
 <a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
