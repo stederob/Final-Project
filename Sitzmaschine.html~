@@ -36,7 +36,7 @@
 <div class="row-fluid">
 <font size ="4">
 <p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-profile-side.png?raw=true" alt="side profile" style="width:250px; heigth:250px;" align="right">
-I started playing the lateral part through the use of "profile prod function" and curves Hermite (lend themselves better to circular shapes), paying attention to the fact that the curve is tightened down.
+I started playing the lateral part through the use of "cylindrical surface function" and Hermite's curves  (lend themselves better to circular shapes), paying attention to the fact that the curve is tightened down.
 </p>
 <p>
 <img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-profileside-with-hole.png?raw=true" alt="profile with hole" style="width:250px; heigth:250px;" align="left">
@@ -60,7 +60,7 @@ function wall_y_with_N_hole(dx,dy,dz,hole_y,hole_z,hole_dy,hole_dz,n){
 }
 </pre>
 
-I also made balls decoration on the sides and under the seat managing the domains so as to obtain hemispheres when desired.
+I made balls decoration on the sides and under the seat managing the domains to obtain hemispheres when desired.
 <pre>
 var domain_sfera = DOMAIN([[0,2*PI],[0,2*PI]])([24,36]);
 var sfera = function(r){
@@ -95,7 +95,7 @@ This is the result obtained in javascript and python.</p>
 </p>
 
 <img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-javascript.png?raw=true" alt="Josef Hoffmann" "javascript result" style="width:300px; heigth:300px;">
-<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-python.png?raw=true" alt="Josef Hoffmann"  style="width:320px; heigth:320px;"/>
+<img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/Sitzmaschine/Sitzmaschine-python.png?raw=true" alt="Josef Hoffmann"  style="width:310px; heigth:310px;"/>
 
 </font>
 </div>

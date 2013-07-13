@@ -37,7 +37,7 @@
 <font size ="4">
 <p align="justify">
 <p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-basi.png?raw=true" alt="side profile" style="width:300px; heigth:300px;" align="right"></p>
-To build the "nesting table" I have defined a function (parametric than the height, three points and the number of tables to be generated) that defines through a for loop the role in its entirety.
+To build the "nesting table" I have defined a function (parametric than height, three points and the number of tables to be generated) that defines through a "for loop" for the role in its entirety.
 
 In particular, the function initially builds, from 3 data points, the other items necessary for the definition of all base curves.
 Subsequently generates the necessary Hermite curves and uses the "cylindrical surface" to close some edges.
@@ -73,11 +73,11 @@ In the same way from a cylinder I built the legs of the 4 tables.</p>
 
 <p>
 <img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/nesting-table/js-piani.png?raw=true" alt="side profile" style="width:200px; heigth:200px;" align="right">
-The table tops are not all uniform, the first differs from the other 3 so I differentiated the two cases via an if statement. The table top is also not rectangular like the ones below so I used an external function to generate it.
+The table tops are not all uniform. The first differs from the other 3, so I differentiated the two cases via an if statement. The table top is also not rectangular like the ones below so I used an external function to generate it.
 </p>
 </br>
 <p>
-I made the decoration of the first four balls on the edge of the table by means of a function that generates n balls attached.</p>
+I made the decoration of the first four balls on the edge of the table with a function that generates "n" balls attached.</p>
 <pre>
 function spheres(r,n){
 	var domain_sfera = DOMAIN([[0,2*PI],[0,2*PI]])([24,36]);
@@ -92,7 +92,7 @@ function spheres(r,n){
 }
 </pre>
 
-Finally I put the pieces together generated and initialized an array containing the 4 tables separately so that you can manipulate as individual objects.
+Finally I put the pieces generated together and initialized an array containing the 4 tables separately so that you can manipulate them as individual objects.
 <pre>
 		[...]		
 		var table = STRUCT([basis,table_leg,cub])
@@ -103,7 +103,7 @@ Finally I put the pieces together generated and initialized an array containing 
 
 
 
-This is the final result is presented in javascript that in python.</p>
+This is the result obtained in javascript and python.</p>
 <div align="center">
 <h2> Joined tables </h2>
 <figure>
