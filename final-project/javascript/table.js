@@ -123,4 +123,3 @@ var spheres_l = T([0,1,2])([1.4,6.3,7.1])(spheres(0.2,4))
 var sp = STRUCT([spheres_l,spheres_r])
 var table = STRUCT([t[0],t[1],t[2],t[3],sp])
 DRAW(table)
-
