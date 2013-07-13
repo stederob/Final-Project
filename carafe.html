@@ -38,10 +38,13 @@
 <p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe-spouth.png?raw=true" alt="spouth-carafe-js" style="width:180px; heigth:180px;" align="right">
 <p>To build the carafe I made half of the figure.
 </p><p>
-To build the spouth and the back part I used the "patch coon" by defining the two vertical linne via bezier and the two horizontal lines as explained above.</p>
+To build the spouth and the back part I used the "Coons patch" by defining the two vertical lines via Bezier's curves and the two horizontal lines by Hermite's curves.</p>
+
 <p><img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe-form.png?raw=true" alt="carafe-form-js" style="width:280px; heigth:280px;" align="lft">
-</br>Each circular sector having different heights was generated individually using orizzantali two curves: a curve of hermite that follows the semi-circumference and a bezier curve that achieves the upper edge.
-I then used a function to generate the surface</p>
+
+</br>Each circular sector have different heights and it was generated individually, using two horizontal curves: a curve of Hermite that follows the semi-circumference and a Bezier's curve that achieves the upper edge.
+Then I used a function to generate the surface</p>
+
 <pre>
 function move(p,h,s){
 	var p1 = p;
@@ -62,10 +65,12 @@ function side_form(p1,p2,s){
 
 
 </br>
-<p>The handle was designed by Coons patches
+<p>The handle was designed by Coons patches.
+
 <img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe-handle.png?raw=true" alt="handle-carafe-js" style="width:200px; heigth:200px;" align="left"></p>
 </br>
-To realize then the other half of the figure I rotated the points relative to the axis y through a function.
+
+Then to realize the other half of the figure I rotated the points relative to the y axis through a function.
 <pre>
 function rotate(punti,v){
 	var p1 = punti;
@@ -73,7 +78,7 @@ function rotate(punti,v){
 	return p1;
 }
 </pre>
-To build the base edge I generated a sector and I rotated PI/5 so as to cover the entire surface.
+To build the edge at the base I generated a sector and I rotated of PI/5 to fill the entire surface.
 This is the result obtained in javascript and python.
 
 <img src="https://github.com/stederob/Final-Project/blob/gh-pages/images/melon%20service/js-carafe.png?raw=true" alt="sugar-bowl-js" style="width:300px; heigth:300px;">
