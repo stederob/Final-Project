@@ -217,3 +217,4 @@ partial_tp = STRUCT([partial_tp_white,partial_tp_black])
 carafebottom = STRUCT([partial_tp,R([1,2])(2*PI/5)]*5)
 
 carafe = STRUCT([carafe_form,handle,carafebottom,sb])
+VIEW(carafe)
