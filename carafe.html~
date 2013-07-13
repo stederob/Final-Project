@@ -26,17 +26,17 @@
               <a class="zip_download_link" href="https://github.com/stederob/Final-Project/zipball/master">Download this project as a .zip file</a>
               <a class="tar_download_link" href="https://github.com/stederob/Final-Project/tarball/master">Download this project as a tar.gz file</a>
             </section>
+<section id="menu">
+<button name="Home" onclick="location.href='http://stederob.github.io/Final-Project/index.html'"><font size="4"> Home</font></button>
+			<button name="Sitzmaschine" onclick="location.href='http://stederob.github.io/Final-Project/Sitzmaschine.html'"><font size="4"> Sitzmaschine</font></button>
+<button name="Nesting Table" style=”background-color:blue” onclick="location.href='http://stederob.github.io/Final-Project/Nesting_table.html'"><font size="4"> Nesting Table</font></button>
+<button name="Melon Service" onclick="location.href='http://stederob.github.io/Final-Project/melon_service.html'"><font size="4"> Melon Service</font></button>
+	    </section>
          </header>
     </div>
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-<div id="sidebar">
-<button name="Home" onclick="location.href='http://stederob.github.io/Final-Project/index.html'"><font size="4"> Home</font></button>
-			<button name="Sitzmaschine" onclick="location.href='http://stederob.github.io/Final-Project/Sitzmaschine.html'"><font size="4"> Sitzmaschine</font></button>
-<button name="Nesting Table" style=”background-color:blue” onclick="location.href='http://stederob.github.io/Final-Project/Nesting_table.html'"><font size="4"> Nesting Table</font></button>
-<button name="Melon Service" onclick="location.href='http://stederob.github.io/Final-Project/melon_service.html'"><font size="4"> Melon Service</font></button>
-	    </div>
         <h1>
 <a name="josef-hoffmann" class="anchor" href="#josef-hoffmann"><span class="octicon octicon-link"></span></a>CARAFE</h1>
 <font size ="4">
